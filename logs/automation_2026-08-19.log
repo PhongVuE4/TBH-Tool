@@ -1,0 +1,534 @@
+[13:50:37] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:50:37] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:50:37] [INFO] Loading template assets...
+[13:50:44] [INFO] Successfully cached 511 templates in memory.
+[13:50:44] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[13:50:59] [SYSTEM] [+] PREPARING AUTOMATION: Please switch to your Game window in 3 seconds...
+[13:50:59] [SYSTEM]     Starting automation in: 3s...
+[13:51:00] [SYSTEM]     Starting automation in: 2s...
+[13:51:00] [WARN] [PAUSED] Automation engine paused.
+[13:51:01] [SYSTEM]     Starting automation in: 1s...
+[13:51:02] [ACTION] [✓] Automation Engine Active!
+[13:51:06] [INFO] [RESUMED] Automation engine resumed.
+[13:51:09] [WARN] [PAUSED] Automation engine paused.
+[13:51:10] [INFO] Searching for item...
+[13:51:10] [INFO] 
+Template:   boss_chest.png [BOSS REWARD CHEST]
+Confidence: 0.9111
+Position:   (1711, 914)
+Action:     Left Click Open Boss Chest
+[13:51:12] [ACTION] Opened chest: boss_chest.png
+[13:51:12] [INFO] [UI Safeguard] HERO tab CLOSED (conf=1.000) — opening...
+[13:51:12] [INFO] 
+Template:   hero_tab_closed.png [OPEN HERO TAB]
+Confidence: 1.0000
+Position:   (1902, 987)
+Action:     Left Click UI Restore
+[13:51:12] [INFO] [RESUMED] Automation engine resumed.
+[13:51:13] [CRITICAL] PyAutoGUI Emergency FAILSAFE triggered! Aborting automation.
+[13:51:13] [ERROR] Unhandled exception in AutomationWorker loop: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\gui.py", line 924, in run
+    ready = ensure_ui_tabs_ready(self.vision, self.automation)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\main.py", line 237, in ensure_ui_tabs_ready
+    automation.execute_ui_click(hero_closed, "OPEN HERO TAB")
+  File "D:\Somethings\ToolTest\automation.py", line 426, in execute_ui_click
+    success = self._move_and_click(match.center_x, match.center_y, button="left")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\automation.py", line 172, in _move_and_click
+    pyautogui.click(button=button, duration=click_duration)
+  File "D:\Somethings\ToolTest\venv\Lib\site-packages\pyautogui\__init__.py", line 594, in wrapper
+    returnVal = wrappedFunction(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\venv\Lib\site-packages\pyautogui\__init__.py", line 988, in click
+    _mouseMoveDrag("move", x, y, 0, 0, duration, tween)
+  File "D:\Somethings\ToolTest\venv\Lib\site-packages\pyautogui\__init__.py", line 1504, in _mouseMoveDrag
+    failSafeCheck()
+  File "D:\Somethings\ToolTest\venv\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+[13:51:18] [INFO] Searching for item...
+[13:51:19] [INFO] 
+Template:   standard_chest.png [STANDARD REWARD CHEST]
+Confidence: 0.9530
+Position:   (1751, 913)
+Action:     Left Click Open Chest
+[13:51:20] [ACTION] Opened chest: standard_chest.png
+[13:51:20] [INFO] [UI Safeguard] HERO tab CLOSED (conf=1.000) — opening...
+[13:51:20] [INFO] 
+Template:   hero_tab_closed.png [OPEN HERO TAB]
+Confidence: 1.0000
+Position:   (1902, 987)
+Action:     Left Click UI Restore
+[13:51:22] [WARN] [PAUSED] Automation engine paused.
+[13:51:23] [INFO] [UI Safeguard] Opening STASH panel (conf=1.000)...
+[13:51:23] [INFO] 
+Template:   stash_tab_icon.png [OPEN STASH TAB]
+Confidence: 1.0000
+Position:   (1546, 786)
+Action:     Left Click UI Restore
+[13:51:24] [INFO] [UI Safeguard] Opening CUBE panel (conf=1.000)...
+[13:51:24] [INFO] 
+Template:   cube_tab_icon.png [OPEN CUBE TAB]
+Confidence: 1.0000
+Position:   (1763, 786)
+Action:     Left Click UI Restore
+[13:51:28] [INFO] [Cube Window] Non-Alchemy mode active. Opening Cube mode dropdown...
+[13:51:28] [INFO] 
+Template:   mode_header_synthesis.png [CUBE MODE → Alchemy]
+Confidence: 0.9718
+Position:   (1647, 370)
+Action:     Left Click Cube Mode Control
+[13:51:31] [INFO] [RESUMED] Automation engine resumed.
+[13:51:32] [INFO] [Cube Window] Alchemy template miss — clicking relative position (1647, 447) under 'mode_header_synthesis.png'.
+[13:51:32] [INFO] 
+Template:   alchemy_option_relative [CUBE MODE → Alchemy]
+Confidence: 1.0000
+Position:   (1647, 447)
+Action:     Left Click Cube Mode Control
+[13:51:37] [INFO] Searching for item...
+[13:51:40] [WARN] [PAUSED] Automation engine paused.
+[13:51:50] [INFO] [RESUMED] Automation engine resumed.
+[13:51:51] [WARN] [PAUSED] Automation engine paused.
+[13:51:54] [INFO] Searching for item...
+[13:51:55] [INFO] [UI Safeguard] HERO tab CLOSED (conf=1.000) — opening...
+[13:51:55] [INFO] 
+Template:   hero_tab_closed.png [OPEN HERO TAB]
+Confidence: 1.0000
+Position:   (1902, 987)
+Action:     Left Click UI Restore
+[13:51:58] [INFO] [UI Safeguard] Opening STASH panel (conf=1.000)...
+[13:51:58] [INFO] 
+Template:   stash_tab_icon.png [OPEN STASH TAB]
+Confidence: 1.0000
+Position:   (1546, 786)
+Action:     Left Click UI Restore
+[13:51:59] [INFO] [UI Safeguard] Opening CUBE panel (conf=1.000)...
+[13:51:59] [INFO] 
+Template:   cube_tab_icon.png [OPEN CUBE TAB]
+Confidence: 1.0000
+Position:   (1763, 786)
+Action:     Left Click UI Restore
+[13:52:02] [INFO] [RESUMED] Automation engine resumed.
+[13:52:03] [INFO] [Cube Window] Non-Alchemy mode active. Opening Cube mode dropdown...
+[13:52:03] [INFO] 
+Template:   mode_header_synthesis.png [CUBE MODE → Alchemy]
+Confidence: 0.9718
+Position:   (1647, 370)
+Action:     Left Click Cube Mode Control
+[13:52:05] [INFO] [Cube Window] 'Alchemy' option detected after opening dropdown. Selecting...
+[13:52:05] [INFO] 
+Template:   alchemy_option.png [CUBE MODE → Alchemy]
+Confidence: 1.0000
+Position:   (1648, 436)
+Action:     Left Click Cube Mode Control
+[13:52:06] [WARN] [PAUSED] Automation engine paused.
+[13:52:10] [INFO] Searching for item...
+[13:53:57] [WARN] [STOPPED] Emergency Stop triggered!
+[13:54:01] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:54:01] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:54:01] [INFO] Loading template assets...
+[13:54:01] [INFO] Successfully cached 511 templates in memory.
+[13:54:01] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[13:54:38] [WARN] [STOPPED] Emergency Stop triggered!
+[13:54:40] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 597, in <module>
+    main()
+  File "D:\Somethings\ToolTest\main.py", line 583, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\gui.py", line 2259, in run_gui_app
+    main_win = TBHToolMainWindow()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\gui.py", line 1426, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\gui.py", line 1536, in init_ui
+    self.lbl_app.setStyleSheet("font-weight: bold; font-size: 12px; color: #e5e2e1;")
+    ^^^^^^^^^^^^
+AttributeError: 'TBHToolMainWindow' object has no attribute 'lbl_app'
+
+[13:54:40] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\gui.py", line 2015, in append_log
+    self.txt_console.append(html_line)
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'TBHToolMainWindow' object has no attribute 'txt_console'
+
+[13:55:04] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:55:04] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:55:04] [INFO] Loading template assets...
+[13:55:04] [INFO] Successfully cached 511 templates in memory.
+[13:55:05] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[13:55:21] [WARN] [STOPPED] Emergency Stop triggered!
+[13:55:27] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:55:27] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:55:27] [INFO] Loading template assets...
+[13:55:27] [INFO] Successfully cached 511 templates in memory.
+[13:55:27] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[13:55:35] [WARN] [STOPPED] Emergency Stop triggered!
+[13:56:10] [WARN] [STOPPED] Emergency Stop triggered!
+[13:56:11] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 597, in <module>
+    main()
+  File "D:\Somethings\ToolTest\main.py", line 583, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\gui.py", line 2250, in run_gui_app
+    main_win = TBHToolMainWindow()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\gui.py", line 1426, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\gui.py", line 1729, in init_ui
+    main_layout.addWidget(status_bar)
+                          ^^^^^^^^^^
+NameError: name 'status_bar' is not defined
+
+[13:56:15] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 597, in <module>
+    main()
+  File "D:\Somethings\ToolTest\main.py", line 583, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\gui.py", line 2250, in run_gui_app
+    main_win = TBHToolMainWindow()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\gui.py", line 1426, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\gui.py", line 1729, in init_ui
+    main_layout.addWidget(status_bar)
+                          ^^^^^^^^^^
+NameError: name 'status_bar' is not defined
+
+[13:57:21] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 597, in <module>
+    main()
+  File "D:\Somethings\ToolTest\main.py", line 583, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\gui.py", line 2250, in run_gui_app
+    main_win = TBHToolMainWindow()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\gui.py", line 1427, in __init__
+    self.retranslate_ui()
+  File "D:\Somethings\ToolTest\gui.py", line 1779, in retranslate_ui
+    self.lbl_footer.setText(texts["footer"])
+    ^^^^^^^^^^^^^^^
+AttributeError: 'TBHToolMainWindow' object has no attribute 'lbl_footer'
+
+[13:57:30] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 597, in <module>
+    main()
+  File "D:\Somethings\ToolTest\main.py", line 583, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\gui.py", line 2250, in run_gui_app
+    main_win = TBHToolMainWindow()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\gui.py", line 1426, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\gui.py", line 1729, in init_ui
+    main_layout.addWidget(status_bar)
+                          ^^^^^^^^^^
+NameError: name 'status_bar' is not defined
+
+[13:58:17] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:58:17] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:58:17] [INFO] Loading template assets...
+[13:58:17] [INFO] Successfully cached 511 templates in memory.
+[13:58:17] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[13:59:16] [WARN] [STOPPED] Emergency Stop triggered!
+[13:59:19] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:59:19] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:59:19] [INFO] Loading template assets...
+[13:59:19] [INFO] Successfully cached 511 templates in memory.
+[13:59:20] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[13:59:27] [WARN] [STOPPED] Emergency Stop triggered!
+[13:59:36] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:59:36] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:59:36] [INFO] Loading template assets...
+[13:59:36] [INFO] Successfully cached 511 templates in memory.
+[13:59:36] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[13:59:45] [WARN] [STOPPED] Emergency Stop triggered!
+[13:59:48] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[13:59:48] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[13:59:48] [INFO] Loading template assets...
+[13:59:48] [INFO] Successfully cached 511 templates in memory.
+[13:59:48] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:00:02] [WARN] [STOPPED] Emergency Stop triggered!
+[14:00:07] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[14:00:07] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[14:00:07] [INFO] Loading template assets...
+[14:00:08] [INFO] Successfully cached 511 templates in memory.
+[14:00:08] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:00:16] [WARN] [STOPPED] Emergency Stop triggered!
+[14:00:19] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[14:00:19] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[14:00:19] [INFO] Loading template assets...
+[14:00:20] [INFO] Successfully cached 511 templates in memory.
+[14:00:20] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:00:27] [WARN] [STOPPED] Emergency Stop triggered!
+[14:01:02] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[14:01:02] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[14:01:02] [INFO] Loading template assets...
+[14:01:02] [INFO] Successfully cached 511 templates in memory.
+[14:01:02] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:01:07] [SYSTEM] [+] PREPARING AUTOMATION: Please switch to your Game window in 3 seconds...
+[14:01:07] [SYSTEM]     Starting automation in: 3s...
+[14:01:08] [SYSTEM]     Starting automation in: 2s...
+[14:01:09] [SYSTEM]     Starting automation in: 1s...
+[14:01:10] [ACTION] [✓] Automation Engine Active!
+[14:01:11] [WARN] [PAUSED] Automation engine paused.
+[14:01:14] [INFO] Searching for item...
+[14:01:14] [INFO] 
+Template:   boss_chest.png [BOSS REWARD CHEST]
+Confidence: 0.9063
+Position:   (1711, 914)
+Action:     Left Click Open Boss Chest
+[14:01:15] [ACTION] Opened chest: boss_chest.png
+[14:01:16] [INFO] [UI Safeguard] HERO tab CLOSED (conf=1.000) — opening...
+[14:01:16] [INFO] 
+Template:   hero_tab_closed.png [OPEN HERO TAB]
+Confidence: 1.0000
+Position:   (1902, 987)
+Action:     Left Click UI Restore
+[14:01:18] [INFO] [UI Safeguard] Opening STASH panel (conf=1.000)...
+[14:01:18] [INFO] 
+Template:   stash_tab_icon.png [OPEN STASH TAB]
+Confidence: 1.0000
+Position:   (1546, 786)
+Action:     Left Click UI Restore
+[14:01:20] [INFO] [UI Safeguard] Opening CUBE panel (conf=1.000)...
+[14:01:20] [INFO] 
+Template:   cube_tab_icon.png [OPEN CUBE TAB]
+Confidence: 1.0000
+Position:   (1763, 786)
+Action:     Left Click UI Restore
+[14:07:58] [WARN] [STOPPED] Emergency Stop triggered!
+[14:08:00] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 597, in <module>
+    main()
+  File "D:\Somethings\ToolTest\main.py", line 583, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\gui.py", line 2239, in run_gui_app
+    main_win = TBHToolMainWindow()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\gui.py", line 1427, in __init__
+    self.retranslate_ui()
+  File "D:\Somethings\ToolTest\gui.py", line 1764, in retranslate_ui
+    self.lbl_pause_txt.setText(texts["pause"])
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'TBHToolMainWindow' object has no attribute 'lbl_pause_txt'
+
+[14:22:32] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[14:22:32] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[14:22:32] [INFO] Loading template assets...
+[14:22:36] [INFO] Successfully cached 535 templates in memory.
+[14:22:36] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:22:39] [SYSTEM] [+] PREPARING AUTOMATION: Please switch to your Game window in 3 seconds...
+[14:22:39] [SYSTEM]     Starting automation in: 3s...
+[14:22:40] [WARN] [PAUSED] Automation engine paused.
+[14:22:40] [SYSTEM]     Starting automation in: 2s...
+[14:22:41] [SYSTEM]     Starting automation in: 1s...
+[14:22:42] [ACTION] [✓] Automation Engine Active!
+[14:22:47] [INFO] [RESUMED] Automation engine resumed.
+[14:22:51] [WARN] [PAUSED] Automation engine paused.
+[14:22:52] [INFO] Searching for item...
+[14:22:57] [WARN] [STOPPED] Emergency Stop triggered!
+[14:23:04] [SYSTEM] [+] PREPARING AUTOMATION: Please switch to your Game window in 3 seconds...
+[14:23:04] [SYSTEM]     Starting automation in: 3s...
+[14:23:05] [SYSTEM]     Starting automation in: 2s...
+[14:23:06] [SYSTEM]     Starting automation in: 1s...
+[14:23:07] [ACTION] [✓] Automation Engine Active!
+[14:23:11] [INFO] Searching for item...
+[14:23:12] [INFO] Opening standard reward chest...
+[14:23:13] [ACTION] Opened reward chest.
+[14:23:13] [INFO] [UI Safeguard] HERO tab CLOSED — opening...
+[14:23:13] [INFO] Restoring UI: OPEN HERO TAB...
+[14:23:21] [INFO] [UI Safeguard] STASH icon not found — cannot open STASH panel.
+[14:23:21] [INFO] [UI Safeguard] CUBE icon not found — cannot open CUBE panel.
+[14:23:28] [INFO] Searching for item...
+[14:23:36] [INFO] Searching for item...
+[14:23:38] [WARN] [PAUSED] Automation engine paused.
+[14:25:23] [WARN] [STOPPED] Emergency Stop triggered!
+[14:25:26] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[14:25:27] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[14:25:27] [INFO] Loading template assets...
+[14:25:27] [INFO] Successfully cached 535 templates in memory.
+[14:25:27] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:25:46] [WARN] [STOPPED] Emergency Stop triggered!
+[14:25:57] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[14:25:57] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[14:25:57] [INFO] Loading template assets...
+[14:25:58] [INFO] Successfully cached 535 templates in memory.
+[14:25:58] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:26:40] [WARN] [STOPPED] Emergency Stop triggered!
+[14:39:50] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\Somethings\ToolTest\gui.py", line 3, in <module>
+    from ui.application import run_gui_app
+  File "D:\Somethings\ToolTest\ui\application.py", line 8, in <module>
+    from ui.main_window import TBHToolMainWindow
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 20, in <module>
+    from ui.dialogs import CaptureSaveDialog, MeasureChoiceDialog, SettingsDialog
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 10, in <module>
+    from ui.styles import STITCH_DARK_STYLE
+  File "D:\Somethings\ToolTest\ui\styles.py", line 4
+    STITCH_DARK_STYLE = """
+                        ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 200)
+
+[14:58:12] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[14:58:12] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[14:58:12] [INFO] Loading template assets...
+[14:58:12] [INFO] Successfully cached 535 templates in memory.
+[14:58:12] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[14:58:16] [SYSTEM] [+] PREPARING AUTOMATION: Please switch to your Game window in 3 seconds...
+[14:58:16] [SYSTEM]     Starting automation in: 3s...
+[14:58:17] [SYSTEM]     Starting automation in: 2s...
+[14:58:18] [SYSTEM]     Starting automation in: 1s...
+[14:58:19] [ACTION] [✓] Automation Engine Active!
+[14:58:21] [WARN] [PAUSED] Automation engine paused.
+[14:58:22] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 775, in open_settings_dialog
+    dlg = SettingsDialog(self)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 275, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 336, in init_ui
+    body = QWidget()
+           ^^^^^^^
+NameError: name 'QWidget' is not defined
+
+[14:58:24] [INFO] Searching for item...
+[14:58:26] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 775, in open_settings_dialog
+    dlg = SettingsDialog(self)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 275, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 336, in init_ui
+    body = QWidget()
+           ^^^^^^^
+NameError: name 'QWidget' is not defined
+
+[14:58:27] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 775, in open_settings_dialog
+    dlg = SettingsDialog(self)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 275, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 336, in init_ui
+    body = QWidget()
+           ^^^^^^^
+NameError: name 'QWidget' is not defined
+
+[14:58:33] [WARN] [STOPPED] Emergency Stop triggered!
+[14:58:34] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 683, in tool_measure_region
+    dlg = MeasureChoiceDialog(self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 191, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 220, in init_ui
+    body = QWidget()
+           ^^^^^^^
+NameError: name 'QWidget' is not defined
+
+[14:58:35] [SYSTEM] [+] QUICK HOVER CAPTURE: Please hover your cursor over the item in game...
+[14:58:37] [ERROR] Error during quick hover capture: name 'QWidget' is not defined
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 732, in _perform_quick_hover_crop
+    self.prompt_save_captured_item(final_crop)
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 765, in prompt_save_captured_item
+    save_dlg = CaptureSaveDialog(crop_bgr, parent=self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 22, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 68, in init_ui
+    body = QWidget()
+           ^^^^^^^
+NameError: name 'QWidget' is not defined
+[14:58:42] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 759, in <lambda>
+    QTimer.singleShot(0, lambda: self.prompt_save_captured_item(crop_bgr))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 765, in prompt_save_captured_item
+    save_dlg = CaptureSaveDialog(crop_bgr, parent=self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 22, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\dialogs.py", line 68, in init_ui
+    body = QWidget()
+           ^^^^^^^
+NameError: name 'QWidget' is not defined
+
+[14:58:44] [INFO] Loading template assets...
+[14:58:45] [INFO] Successfully cached 535 templates in memory.
+[14:58:45] [INFO] Reloaded 535 template assets into memory cache.
+[15:01:26] [WARN] [STOPPED] Emergency Stop triggered!
+[15:04:45] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[15:04:45] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[15:04:45] [INFO] Loading template assets...
+[15:04:45] [INFO] Successfully cached 535 templates in memory.
+[15:04:45] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[15:04:52] [SYSTEM] [+] PREPARING AUTOMATION: Please switch to your Game window in 3 seconds...
+[15:04:52] [SYSTEM]     Starting automation in: 3s...
+[15:04:53] [SYSTEM]     Starting automation in: 2s...
+[15:04:54] [SYSTEM]     Starting automation in: 1s...
+[15:04:55] [ACTION] [✓] Automation Engine Active!
+[15:04:59] [INFO] Searching for item...
+[15:05:00] [INFO] Opening standard reward chest...
+[15:05:01] [ACTION] Opened reward chest.
+[15:05:01] [INFO] [UI Safeguard] HERO tab CLOSED — opening...
+[15:05:01] [INFO] Restoring UI: OPEN HERO TAB...
+[15:05:03] [WARN] [PAUSED] Automation engine paused.
+[15:05:14] [WARN] [STOPPED] Emergency Stop triggered!
+[23:52:35] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[23:52:35] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[23:52:35] [INFO] Loading template assets...
+[23:52:42] [INFO] Successfully cached 544 templates in memory.
+[23:52:42] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[23:52:57] [WARN] [STOPPED] Emergency Stop triggered!
+[23:55:13] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[23:55:13] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[23:55:13] [INFO] Loading template assets...
+[23:55:13] [INFO] Successfully cached 544 templates in memory.
+[23:55:13] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[23:55:45] [WARN] [STOPPED] Emergency Stop triggered!
+[23:58:01] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 11, in <module>
+    main()
+  File "D:\Somethings\ToolTest\app\cli.py", line 267, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\ui\application.py", line 25, in run_gui_app
+    main_window = TBHToolMainWindow()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 65, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 174, in init_ui
+    logo = QSvgWidget(str(ASSETS_DIR / "logo.svg"))
+                          ^^^^^^^^^^
+NameError: name 'ASSETS_DIR' is not defined
+
+[23:58:01] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 645, in append_log
+    self.txt_console.append(html_line)
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'TBHToolMainWindow' object has no attribute 'txt_console'
+
+[23:59:39] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[23:59:39] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[23:59:39] [INFO] Loading template assets...
+[23:59:39] [INFO] Successfully cached 544 templates in memory.
+[23:59:39] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[23:59:49] [WARN] [STOPPED] Emergency Stop triggered!

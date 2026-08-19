@@ -1,0 +1,36 @@
+{
+    "GAME_REGION": {
+        "left": 717,
+        "top": 282,
+        "width": 1197,
+        "height": 747
+    },
+    "INVENTORY_REGION": {
+        "left": 1134,
+        "top": 546,
+        "width": 364,
+        "height": 155
+    },
+    "CONFIDENCE_THRESHOLD": 0.84,
+    "SCAN_INTERVAL": 8.55,
+    "CLICK_DURATION": 0.18,
+    "RANDOM_DELAY": [
+        0.1,
+        1.85
+    ],
+    "SALES_SLOTS_CAPACITY": 3,
+    "CHECK_SYNTHESIS_TAB": true,
+    "CHECK_UI_TABS": true,
+    "UI_TAB_CHECK_INTERVAL": 30.0,
+    "INVENTORY_SCROLL_ENABLED": true,
+    "INVENTORY_SCROLL_MAX_STEPS": 5,
+    "INVENTORY_SCROLL_TICKS": 240,
+    "STASH_MODIFIER": "ctrl",
+    "SELL_MODIFIER": "alt",
+    "ITEM_MOUSE_BUTTON": "right",
+    "FAILSAFE": true,
+    "COOLDOWN_INTERVAL": 0.8,
+    "VALIDATE_COORDINATES": true,
+    "LOG_ROTATION": "day",
+    "LOG_RETENTION_DAYS": 14
+}

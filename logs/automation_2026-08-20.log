@@ -1,0 +1,40 @@
+[00:07:01] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[00:07:01] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[00:07:01] [INFO] Loading template assets...
+[00:07:01] [INFO] Successfully cached 544 templates in memory.
+[00:07:01] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[00:07:32] [WARN] [STOPPED] Emergency Stop triggered!
+[00:09:08] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[00:09:08] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[00:09:08] [INFO] Loading template assets...
+[00:09:08] [INFO] Successfully cached 544 templates in memory.
+[00:09:08] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[00:12:14] [WARN] [STOPPED] Emergency Stop triggered!
+[01:07:30] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[01:07:30] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[01:07:30] [INFO] Loading template assets...
+[01:07:35] [INFO] Successfully cached 544 templates in memory.
+[01:07:35] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[01:08:18] [WARN] [STOPPED] Emergency Stop triggered!
+[01:08:20] [CRITICAL] UNHANDLED GLOBAL EXCEPTION:
+Traceback (most recent call last):
+  File "D:\Somethings\ToolTest\main.py", line 11, in <module>
+    main()
+  File "D:\Somethings\ToolTest\app\cli.py", line 267, in main
+    run_gui_app()
+  File "D:\Somethings\ToolTest\ui\application.py", line 25, in run_gui_app
+    main_window = TBHToolMainWindow()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 66, in __init__
+    self.init_ui()
+  File "D:\Somethings\ToolTest\ui\main_window.py", line 386, in init_ui
+    status_layout.addWidget(status_left)
+                            ^^^^^^^^^^^
+NameError: name 'status_left' is not defined. Did you mean: 'status_bar'?
+
+[01:08:34] [INFO] They work only while this tool, the desktop, or TaskBarHero is focused. Run as Administrator if TaskBarHero still swallows shortcuts.
+[01:08:34] [INFO] Windows Display Scaling: 1.00x (Standard 100% DPI).
+[01:08:34] [INFO] Loading template assets...
+[01:08:35] [INFO] Successfully cached 544 templates in memory.
+[01:08:35] [INFO] TBH-Tool Automation Engine initialized (PVandAI). Screen Bounds: 1920x1080px. FailSafe=True
+[01:08:48] [WARN] [STOPPED] Emergency Stop triggered!
